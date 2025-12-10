@@ -73,9 +73,10 @@ const Hero = () => {
     tl.to(
       phoneRef.current,
       {
-        x: -1000,
-        scale: 1.25,
-        duration: 0.8,
+        x: -1200,
+        y: 200,
+        scale: 1.75,
+        duration: 0.4,
       },
       0.5
     );
@@ -83,10 +84,10 @@ const Hero = () => {
     tl.to(
       dashboardRef.current,
       {
-        scale: 1.5,
-        x: -450,
+        scale: 1.35,
+        x: -400,
         y: -100,
-        duration: 0.8,
+        duration: 0.5,
       },
       0.5
     );
@@ -95,10 +96,11 @@ const Hero = () => {
     tl.to(
       layerRef.current,
       {
-        scale: 5,
+        scaleX: 1.5,
+        width: "90rem",
         x: -500,
-        y: -400,
-        duration: 0.8,
+        y: -300,
+        duration: 1,
       },
       0.2
     );
@@ -106,9 +108,9 @@ const Hero = () => {
     tl.to(
       pbxRef.current,
       {
-        y: 100,
+        y: 150,
         x: -10,
-        duration: 0.5,
+        duration: 1,
       },
       0.2
     );
@@ -117,9 +119,9 @@ const Hero = () => {
     tl.to(
       statsRef.current,
       {
-        x: -250, // Move with other elements
-        scale: 0.4, // Counter-scale to maintain original size
-        duration: 0.2,
+        x: 300,
+        duration: 0.5,
+        opacity: 0,
       },
       0.2
     );
@@ -194,9 +196,9 @@ const Hero = () => {
           {/* Background Blue Layer */}
           <div
             ref={layerRef}
-            className="absolute w-[40rem] h-[40rem] z-0"
+            className="absolute w-[100rem] h-[40rem] z-0"
             style={{
-              right: "-10%",
+              right: "-75%",
               top: "35%",
               transform: "translateY(10%) translateX(-5%)",
             }}
