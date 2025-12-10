@@ -38,11 +38,10 @@ const Hero = () => {
       scrollTrigger: {
         trigger: container,
         start: "top top",
-        end: "+=200", // Shorter scroll distance - 400px
+        end: "+=200",
         scrub: 1,
         pin: true,
         pinSpacing: true,
-        markers: true,
       },
     });
 
@@ -61,7 +60,7 @@ const Hero = () => {
     tl.to(
       imageContainer,
       {
-        width: "50vw",
+        // width: "50vw",
         y: -20,
 
         duration: 1,
@@ -73,9 +72,9 @@ const Hero = () => {
     tl.to(
       phoneRef.current,
       {
-        x: -1200,
+        x: -1100,
         y: 200,
-        scale: 1.75,
+        scale: 1.65,
         duration: 0.4,
       },
       0.5
@@ -84,9 +83,9 @@ const Hero = () => {
     tl.to(
       dashboardRef.current,
       {
-        scale: 1.35,
+        scale: 1.45,
         x: -400,
-        y: -100,
+        y: -150,
         duration: 0.5,
       },
       0.5
@@ -99,7 +98,7 @@ const Hero = () => {
         scaleX: 1.5,
         width: "90rem",
         x: -500,
-        y: -300,
+        y: -200,
         duration: 1,
       },
       0.2
@@ -196,7 +195,7 @@ const Hero = () => {
           {/* Background Blue Layer */}
           <div
             ref={layerRef}
-            className="absolute w-[100rem] h-[40rem] z-0"
+            className="absolute w-[90rem] h-[40rem] z-0"
             style={{
               right: "-75%",
               top: "35%",
